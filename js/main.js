@@ -2,7 +2,7 @@ let lg = document.getElementById("login");
 lg.addEventListener("click", async (e) => {
   e.preventDefault();
   console.log("enter");
-  await fetch("https://voting-57vf.onrender.com/auth/signin", {
+  await fetch("https://votingsyste-production.up.railway.app/auth/signin", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -14,7 +14,7 @@ lg.addEventListener("click", async (e) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      func (data);
+      func(data);
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -24,5 +24,7 @@ lg.addEventListener("click", async (e) => {
 });
 function func(data) {
   let res = document.getElementById("pass");
-  
+  let para = document.createElement("h5");
+  para.innerHTML = `${data.message}`;
+  res.appendChild(para);
 }
