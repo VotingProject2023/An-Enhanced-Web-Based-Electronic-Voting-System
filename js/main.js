@@ -14,7 +14,7 @@ lg.addEventListener("click", async (e) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Success:", data);
+      func (data);
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -22,3 +22,7 @@ lg.addEventListener("click", async (e) => {
   console.log(document.getElementById("tet").value);
   console.log(document.getElementById("set").value);
 });
+function func(data) {
+  let res = document.getElementById("pass");
+  
+}
