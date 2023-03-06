@@ -1,7 +1,8 @@
 let lg = document.getElementById("login");
-lg.addEventListener("click", (e) => {
-  e.console.log("enter");
-  fetch("https://voting-57vf.onrender.com/auth/signin", {
+lg.addEventListener("click", async (e) => {
+  e.preventDefault();
+  console.log("enter");
+  await fetch("https://voting-57vf.onrender.com/auth/signin", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
