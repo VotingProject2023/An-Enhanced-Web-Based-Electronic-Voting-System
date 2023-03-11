@@ -480,3 +480,74 @@ footer .container .box2 p:first-child::before {
 .re-enter_password {
 }
 /* End re-enter_password */
+
+/* Start register_enter_code */
+
+.register_enter_code {
+  height: 100vh;
+  background-color: var(--light);
+}
+.register_enter_code .navbar-brand {
+  padding: 20px;
+}
+.register_enter_code .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register_enter_code .container input {
+  background-color: var(--dark);
+  border: none;
+  color: var(--white);
+  width: 250px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.register_enter_code .container button {
+  background-color: var(--orange);
+  border: none;
+  width: 250px;
+  height: 35bpx;
+  color: var(--white);
+}
+.register_enter_code .container img {
+  width: 400px;
+}
+/* xl screen */
+@media (min-width: 1400px) {
+  .register_enter_code .container img {
+    width: fit-content;
+  }
+  
+}
+/* small screen */
+@media (max-width: 400px) {
+  .register_enter_code .container img {
+    width: inherit;
+  }
+  .register_enter_code .container button {
+    background-color: var(--orange);
+    border: none;
+    width: inherit;
+    height: 35bpx;
+    color: var(--white);
+  }
+  .register_enter_code .container input {
+    background-color: var(--dark);
+    border: none;
+    color: var(--white);
+    width: inherit;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+}
+.register_enter_code .container p {
+  font-size: 30px;
+  text-align: center;
+  color: var(--bluegreen);
+}
+
+/* End register_enter_code */
