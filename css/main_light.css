@@ -480,3 +480,51 @@ footer .container .box2 p:first-child::before {
 .re-enter_password {
 }
 /* End re-enter_password */
+
+/* Start welcome_email */
+
+.welcome_email {
+  height: 100vh;
+  background-color: var(--light);
+}
+.welcome_email .navbar-brand {
+  padding: 20px;
+}
+.welcome_email .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome_email .container img {
+  width: 400px;
+}
+.welcome_email .container p {
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+/* xl screen  */
+@media (min-width: 1400px) {
+  .welcome_email .container p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .welcome_email .container img {
+    width: fit-content;
+  }
+}
+/* small screen  */
+@media (max-width: 575px) {
+  .welcome_email .container img {
+    width: inherit;
+  }
+
+  .welcome_email .container p {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+/* End welcome_email */
