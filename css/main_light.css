@@ -473,7 +473,44 @@ footer .container .box2 p:first-child::before {
 }
 /* End verification */
 /* Start forgot_enter_code */
-.forgot_enter_code {
+.forgot_enter_code .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  gap: 10px;
+}
+.forgot_enter_code .container img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+}
+.forgot_enter_code .container div {
+  font-size: 20px;
+  color: var(--bluegreen);
+}
+.forgot_enter_code .container input {
+  border: transparent;
+  background-color: var(--dark);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+  font-size: 32px;
+}
+.forgot_enter_code .container input:focus {
+  outline: transparent;
+}
+.forgot_enter_code .container button {
+  background-color: var(--orange);
+}
+.forgot_enter_code .container input,
+.forgot_enter_code .container button {
+  /* padding: 5px; */
+  width: 200px;
 }
 /* End forgot_enter_code */
 /* Start re-enter_password */
