@@ -469,7 +469,31 @@ footer .container .box2 p:first-child::before {
 }
 /* End forgot_password */
 /* Start verification */
-.verification {
+.verification .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+}
+.verification .container h3 {
+  font-size: 40px;
+  text-align: center;
+}
+.verification .container p {
+  color: var(--dark);
+  font-size: 30px;
+  max-width: 530px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .verification .container h3 {
+    font-size: 27px;
+  }
+  .verification .container p {
+    font-size: 20px;
+  }
 }
 /* End verification */
 /* Start forgot_enter_code */
