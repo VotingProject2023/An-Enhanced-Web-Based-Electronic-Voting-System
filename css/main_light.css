@@ -359,3 +359,42 @@ footer .container .box2 p:first-child::before {
 .re-enter_password {
 }
 /* End re-enter_password */
+.rules .container {
+  padding: 30px;
+}
+.rules .container h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.rules .container .R1 {
+  border: 3px solid #015fc7;
+  padding: 20px;
+  font-size: 15px;
+  font-family: Source Serif Pro;
+}
+.rules .container .R1 li {
+  padding-left: 20px;
+}
+.rules .container .R2 {
+  padding: 20px;
+  position: relative;
+}
+.rules .container .R2 .buttons {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  justify-content: end;
+  align-items: end;
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  margin-top: 10px;
+  gap: 10px;
+}
+@media (max-width: 426px) {
+  .rules .container .R2 .buttons {
+    position: absolute;
+    top: 60px;
+    left: 30%;
+  }
+}
