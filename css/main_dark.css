@@ -150,6 +150,55 @@ nav .navbar-toggler:focus {
     width: 30%;
   }
 }
+/* start create_election */
+.create_elections {
+  height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.create_elections .container {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 30px;
+}
+.create_elections h1 {
+  color: var(--light);
+}
+.create_elections .inputs p {
+  color: var(--bluegreen);
+  font-size: 25px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.create_elections .inputs .input2 .startend,
+.input1,
+.input3 {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+.create_elections form input {
+  padding: 0px;
+  margin-top: 10px;
+}
+@media (max-width: 576px) {
+  .create_elections .inputs p {
+    font-size: 15px;
+  }
+  .create_elections .inputs .input2 .startend,
+  .input1,
+  .input3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;s
+  }
+  .create_elections form input {
+    margin-top: 0px;
+  }
+}
+/* end create_election */
 
 /* Start personal_info */
 .personal_info {
