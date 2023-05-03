@@ -151,6 +151,72 @@ nav .navbar-toggler:focus {
   }
 }
 
+/* Start Upcoming elections  */
+.upcoming_elections_admin {
+}
+
+.upcoming_elections_admin .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.upcoming_elections_admin .container .headline {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.upcoming_elections_admin .container .election_comming {
+  display: grid;
+  grid-template-columns: 75% auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.upcoming_elections_admin .container .election_det {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--light);
+  color: var(--dark);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.upcoming_elections_admin .container .election_det .election_name,
+.election_date {
+  margin: 8px;
+}
+.upcoming_elections_admin .container .election_comming .election_icons {
+  display: flex;
+  flex-direction: row;
+  color: var(--light);
+  gap: 5px;
+  font-size: large;
+}
+
+.upcoming_elections_admin .container .create_new {
+  width: 50%;
+  color: var(--white);
+  margin-left: 25%;
+}
+
+.upcoming_elections_admin .container .cancel,
+.edit {
+  background-color: var(--light);
+  color: var(--orange);
+}
+@media (max-width: 375px) {
+  .upcoming_elections_admin .container .election_det .election_name,
+  .election_date {
+    font-size: x-small;
+  }
+  .upcoming_elections_admin .container .create_new {
+    font-size: smaller;
+  }
+}
+
+/* End Upcoming elections  */
+
 /* Start personal_info */
 .personal_info {
 }
