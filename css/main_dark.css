@@ -152,9 +152,7 @@ nav .navbar-toggler:focus {
 }
 /* start create_election */
 .create_elections {
-  height: 100vh;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  height: fit-content;
 }
 .create_elections .container {
   display: flex;
@@ -164,6 +162,7 @@ nav .navbar-toggler:focus {
 }
 .create_elections h1 {
   color: var(--light);
+  margin-top: 30px;
 }
 .create_elections .inputs p {
   color: var(--bluegreen);
@@ -180,7 +179,6 @@ nav .navbar-toggler:focus {
   gap: 35px;
 }
 .create_elections form input {
-  padding: 0px;
   margin-top: 10px;
 }
 @media (max-width: 576px) {
@@ -197,16 +195,6 @@ nav .navbar-toggler:focus {
   .create_elections form input {
     margin-top: 0px;
   }
-}
-.create_elections .buttons .submit {
-  font-family: "Source Serif Pro", serif !important;
-  font-weight: bold;
-  border-radius: 5px;
-  border: none;
-  background-color: var(--orange);
-  color: var(--light) !important;
-  padding: 10px 10px !important;
-  margin-top: 2px;
 }
 /* end create_election */
 
