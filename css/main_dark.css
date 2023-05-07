@@ -214,14 +214,13 @@ nav .navbar-toggler:focus {
   .upcoming_elections_admin .container .create_new {
     font-size: smaller;
   }
-
-  }
-  .upcoming_elections_admin .scroll-container {
-    height: 420px;
-    overflow-y: auto;
-   background-color: transparent;
-   padding: 10px;
-} 
+}
+.upcoming_elections_admin .scroll-container {
+  height: 420px;
+  overflow-y: auto;
+  background-color: transparent;
+  padding: 10px;
+}
 /* Style the scrollbar for WebKit-based browsers */
 #scrollable-div::-webkit-scrollbar {
   width: 10px;
@@ -234,7 +233,6 @@ nav .navbar-toggler:focus {
 #scrollable-div::-webkit-scrollbar-thumb {
   background-color: #888;
   border-radius: 7px;
-  
 }
 
 #scrollable-div::-webkit-scrollbar-thumb:hover {
@@ -257,6 +255,17 @@ nav .navbar-toggler:focus {
 
 #scrollable-div::-moz-scrollbar-thumb:hover {
   background-color: #555;
+}
+@media (min-width: 1440px) {
+  .upcoming_elections_admin .scroll-container {
+    height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming_elections_admin .scroll-container {
+    height: 350px;
+  }
 }
 
 /* End Upcoming elections  */
