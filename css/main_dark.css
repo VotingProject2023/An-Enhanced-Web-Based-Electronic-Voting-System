@@ -180,6 +180,7 @@ nav .navbar-toggler:focus {
   color: var(--dark);
   margin-top: 10px;
   margin-bottom: 10px;
+  
 }
 
 .upcoming_elections_admin .container .election_det .election_name,
@@ -188,7 +189,6 @@ nav .navbar-toggler:focus {
 }
 .upcoming_elections_admin .container .election_comming .election_icons {
   display: flex;
-  flex-direction: row;
   color: var(--light);
   gap: 5px;
   font-size: large;
@@ -206,14 +206,30 @@ nav .navbar-toggler:focus {
   background-color: var(--light);
   color: var(--orange);
 }
-@media (max-width: 375px) {
-  .upcoming_elections_admin .container .election_det .election_name,
-  .election_date {
-    font-size: x-small;
-  }
+@media (max-width: 776px) {
+
   .upcoming_elections_admin .container .create_new {
-    font-size: smaller;
+  
+    font-size: 14px;
+
+    
   }
+  .upcoming_elections_admin .container .election_comming {
+display: block;
+font-size: 15px;
+
+}
+.upcoming_elections_admin .container .election_comming .election_icons {
+justify-content: center;
+margin-top: 10px;
+margin-bottom: 20px;
+
+}
+.upcoming_elections_admin .container .cancel,
+.edit {
+ width: 50%;
+}
+
 }
 .upcoming_elections_admin .scroll-container {
   height: 420px;
