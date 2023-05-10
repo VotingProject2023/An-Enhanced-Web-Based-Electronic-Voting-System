@@ -181,6 +181,12 @@ nav .navbar-toggler:focus {
 .create_elections form input {
   margin-top: 10px;
 }
+.create_elections form .nameE{
+  width: 200%;
+  }
+.create_elections form .numberE{
+    width: 20%;
+    }
 @media (max-width: 576px) {
   .create_elections .inputs p {
     font-size: 15px;
@@ -195,6 +201,25 @@ nav .navbar-toggler:focus {
   .create_elections form input {
     margin-top: 0px;
   }
+  .create_elections form .nameE{
+    width: 100%;
+    }
+
+}
+
+@media (min-width: 1024px){
+  .create_elections p{
+    font-size: x-large;
+  }
+  .create_elections input{
+    font-size: x-large;
+  }
+  .create_elections button{
+    font-size: x-large;
+  }
+
+
+
 }
 /* end create_election */
 
