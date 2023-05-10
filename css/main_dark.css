@@ -167,7 +167,7 @@ nav .navbar-toggler:focus {
 
 .upcoming_elections_admin .container .election_comming {
   display: grid;
-  grid-template-columns: 75% auto;
+  grid-template-columns: 85% auto;
   justify-content: center;
   align-items: center;
   gap: 20px;
