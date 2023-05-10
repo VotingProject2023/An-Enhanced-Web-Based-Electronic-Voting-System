@@ -183,6 +183,7 @@ nav .navbar-toggler:focus {
 }
 .create_elections form .numberE {
   width: 20%;
+  text-align: center;
 }
 @media (max-width: 425px) {
   .create_elections .inputs p {
