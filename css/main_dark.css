@@ -167,8 +167,6 @@ nav .navbar-toggler:focus {
 .create_elections .inputs p {
   color: var(--bluegreen);
   font-size: 25px;
-  margin-top: 3px;
-  margin-bottom: 3px;
 }
 
 .create_elections .inputs .input2 .startend,
@@ -179,17 +177,18 @@ nav .navbar-toggler:focus {
   gap: 35px;
 }
 .create_elections form input {
-  margin-top: 10px;
 }
-.create_elections form .nameE{
+.create_elections form .nameE {
   width: 200%;
-  }
-.create_elections form .numberE{
-    width: 20%;
-    }
-@media (max-width: 576px) {
+}
+.create_elections form .numberE {
+  width: 20%;
+}
+@media (max-width: 425px) {
   .create_elections .inputs p {
     font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
   .create_elections .inputs .input2 .startend,
   .input1,
@@ -201,25 +200,23 @@ nav .navbar-toggler:focus {
   .create_elections form input {
     margin-top: 0px;
   }
-  .create_elections form .nameE{
+  .create_elections form .nameE {
     width: 100%;
-    }
-
+  }
 }
 
-@media (min-width: 1024px){
-  .create_elections p{
-    font-size: x-large;
+@media (min-width:1024px) {
+  .create_elections p {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
-  .create_elections input{
+  .create_elections input {
     font-size: x-large;
+    margin-bottom: 10px;
   }
-  .create_elections button{
-    font-size: x-large;
+  .create_elections button {
+    font-size: large;
   }
-
-
-
 }
 /* end create_election */
 
